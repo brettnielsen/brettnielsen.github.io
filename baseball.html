@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="baseballStyle.css.css">
+    <script src="baseball.js"></script>
+</head>
+
+<body onload="displayBases()">
+<div class="rightButtonDiv">
+    <button id="newGameButton" onclick="newGame()">New Game</button>
+</div>
+<table class="headerTable">
+    <th class="alignLeft">COUNT</th>
+    <th class="spacing"></th>
+    <th class="alignRight">SCORE</th>
+    <tr>
+        <td class="alignLeft"><span>Strikes: </span><span id="strike">0</span></td>
+        <td class="spacing"></td>
+        <td class="alignRight"><span>Runs:</span><span id="runs">0</span></td>
+    </tr>
+    <tr>
+        <td class="alignLeft"><span>Balls: </span><span id="ball">0</span></td>
+        <td class="spacing"></td>
+        <td class="alignRight"><span>Outs:</span><span id="outs">0</span></td>
+    </tr>
+</table>
+
+<h1 class="results"><span></span><span id="results">Click Pitch to Start Game</span></h1>
+
+<table class="bases">
+    <th>BASES</th>
+    <tr>
+        <td></td><td><span>2nd:</span><span id="secondBase"></span></td>
+    </tr>
+    <tr>
+        <td><span>3rd:</span><span id="thirdBase"></span></td>
+        <td>  <div class="buttonDiv">
+            <button id="pitchButton" onclick="pitchLogic()">Pitch</button>
+        </div></td>
+        <td><span>1st:</span><span id="firstBase"></span></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+<br>
+
+<br>
+</body>
+
+</html>
+
+<!--Bitbucket: https://bitbucket.org/bnielsen03/baseballsim/src/master/-->
